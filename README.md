@@ -98,6 +98,33 @@ La metodología usada para la codificación de las hojas de estilo de la aplicac
 -	Las clases deben ir en singular y minúsculas (*Ejemplo: .galeria__boton*).
 -	El estilo de escritura es **Kebab Case** (*Ejemplo: .main-header*).
 
+## Sintaxis
+
+-	Uso siempre de palabras en minúscula.
+-	Uso de comillas dobles preferiblemente en lugar de comillas simples.
+-	El selector y la llave de apertura deben ir en la misma línea, sin sangrar.
+-	1 espacio en blanco entre el selector y la llave.
+-	Cada propiedad debe ir en una línea, completando la línea con un punto y coma.
+-	1 tabulación para identación.
+-	0 espacios antes de los dos puntos que separan la propiedad y su valor. 
+-	1 espacio después de los dos puntos que definen de la propiedad.
+-	0 espacios en blanco antes del punto y coma final de cada línea de propiedad.
+-	La llave de cierre debe ir en una línea, sin sangrar. En esa línea sólo estará la llave de cierre.
+-	Bloques de CSS separados por una línea en blanco (2 saltos de línea).
+-	Selectores dentro del mismo bloque separados por 1 salto de línea.
+-	Última propiedad termina siempre con punto y coma.
+-	Evitar abuso de anidaciones. Límite 1 nivel.
+-	Evitar el uso de identificadores `id/#` salvo en especificaciones muy concretas como el uso de anclas.
+-	Siempre que se pueda usar clases `class/.`.
+-	Uso de mixins para tamaño, estilos y media queries.
+-	Uso de funciones para cálculos. *Ejemplo: Valores numéricos o el tamaño de fuente*.
+-	1 espacio entre parámetros en mixins y funciones.
+-	1 espacio antes de los paréntesis, que contienen los parámetros, en mixins y funciones.
+-	Uso de propiedades cortas cuando sea posible. *Ejemplo border: 1px solid #000*
+-	Se deben omitir los 0 cuando sea posible. *Ejemplo Escribir .8 en lugar de 0.8*
+-	Uso de 3 caracteres haxadecimales cuando sea posible en lugar de 6. *Ejemplo #000*
+
+
 
 
 
