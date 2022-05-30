@@ -1,4 +1,4 @@
-# Guía de estilos
+# Guía de estilos CSS
 
 Lo importante al escribir una hoja de estilo es seguir siempre los mismos criterios, para que sea más fácil detectar errores o poder reutilizarla en otros proyectos. En la mayoría de los casos, esto no supone ningún problema mientras una persona trabaje sola en un proyecto. Sin embargo, en el caso de proyectos web de mayor envergadura, son varios equipos los que se encargan de la edición, desarrollo y mantenimiento de la página web. La solución en dichos entornos de trabajo se plantea en forma de guía de estilo que permite escribir código más limpio.
 
@@ -123,6 +123,34 @@ La metodología usada para la codificación de las hojas de estilo de la aplicac
 -	Uso de propiedades cortas cuando sea posible. *Ejemplo border: 1px solid #000*
 -	Se deben omitir los 0 cuando sea posible. *Ejemplo Escribir .8 en lugar de 0.8*
 -	Uso de 3 caracteres haxadecimales cuando sea posible en lugar de 6. *Ejemplo #000*
+
+## Propiedades
+
+Escribir las sentencias en el orden en que aparecen los elementos en la página web. Además, las propiedades y selectores deberán ordenarse de la siguiente manera:
+
+-	Propiedades del modelo de caja (*display, width, height, margin, padding, border…*).
+-	Posicionamiento (*position, left, top…*).
+-	Tipografía (*text-transform, font-size…*).
+-	Decoración (*color, background…*).
+-	Variables.
+-	Extends.
+-	Mixins.
+-	Mixins con `@content`
+
+```css
+.button {
+	display: block;
+	width: 220px;
+	height: 40px;
+	position: relative;
+	text-transform: uppercase;
+	background-color: #fff;
+	font-weight: $semibold;
+	@include font-size (13px);
+}
+```
+
+
 
 
 
