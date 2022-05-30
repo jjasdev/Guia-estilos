@@ -75,6 +75,7 @@ La metodología usada para la codificación de las hojas de estilo de la aplicac
 </section>
 ```
 -	Elementos
+```html
 <section>
 	<article class="noticia"> 
 		<h1 class="noticia__titulo">Título de la noticia</h1>
@@ -82,12 +83,21 @@ La metodología usada para la codificación de las hojas de estilo de la aplicac
 </section>
 ```
 -	Modificadores
+```html
 <section>
 	<article class="noticia"> 
 		<h1 class="noticia__titulo--mayuscula">Título de la noticia</h1>
 	</article>
 </section>
 ```
+
+## Reglas generales
+
+-	Los nombres de las hojas de estilo que vayan dentro de las carpetas `components`, `layouts` y `utils` irán en plural y siempre deben comenzar con un guión bajo. El resto de hojas de estilo se nombrarán en singular (*Ejemplo: _botones.scss*).
+-	Las imágenes se nombran en referencia a su bloque y están separadas por un guión (*Ejemplo: background-header.png*).
+-	Las clases deben ir en singular y minúsculas (*Ejemplo: .galeria__boton*).
+-	El estilo de escritura es **Kebab Case** (*Ejemplo: .main-header*).
+
 
 
 
